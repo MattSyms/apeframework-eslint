@@ -3,7 +3,6 @@ import typescriptRules from './rules/typescript.js'
 import typescriptDisabledRules from './rules/typescriptDisabled.js'
 
 const typescriptConfig = {
-  files: ['*.ts', '**/*.ts'],
   plugins: {
     'typescript': typescriptPlugin.plugin,
   },

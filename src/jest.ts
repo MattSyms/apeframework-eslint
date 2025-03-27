@@ -3,7 +3,6 @@ import globals from 'globals'
 import jestRules from './rules/jest.js'
 
 const jestConfig = {
-  files: ['*.spec.ts', '**/*.spec.ts', '*.test.ts', '**/*.test.ts'],
   plugins: {
     'jest': jestPlugin,
   },

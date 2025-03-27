@@ -22,7 +22,10 @@ import typescript from '@apeframework/eslint/typescript'
 
 const config = [
   node,
-  typescript,
+  {
+    files: ['*.ts', '**/*.ts'],
+    ...typescript,
+  }
 ]
 
 export {
@@ -39,8 +42,14 @@ import vue from '@apeframework/eslint/vue'
 
 const config = [
   browser,
-  typescript,
-  vue,
+  {
+    files: ['*.ts', '**/*.ts'],
+    ...typescript,
+  },
+  {
+    files: ['*.vue', '**/*.vue'],
+    ...vue,
+  },
 ]
 
 export {

@@ -6,7 +6,6 @@ import typescriptDisabledRules from './rules/typescriptDisabled.js'
 import vueRules from './rules/vue.js'
 
 const vueConfig = {
-  files: ['*.vue', '**/*.vue'],
   plugins: {
     'typescript': typescriptPlugin.plugin,
     'vue': vuePlugin,
