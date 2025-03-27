@@ -29,9 +29,6 @@ const vueRules = {
   'vue/component-options-name-casing': [
     'error',
   ],
-  'vue/component-tags-order': [
-    'error',
-  ],
   'vue/custom-event-name-casing': [
     'error',
   ],
@@ -219,6 +216,9 @@ const vueRules = {
     'error',
   ],
   'vue/no-expose-after-await': [
+    'error',
+  ],
+  'vue/no-import-compiler-macros': [
     'error',
   ],
   'vue/no-lifecycle-after-await': [

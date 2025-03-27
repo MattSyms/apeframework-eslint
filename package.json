@@ -14,26 +14,26 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^2.12",
+    "@stylistic/eslint-plugin": "^4.2",
     "eslint-plugin-import": "^2.31",
-    "eslint-plugin-jest": "^28.10",
-    "eslint-plugin-vue": "^9.32",
-    "globals": "^15.14",
-    "typescript-eslint": "^8.18",
-    "vue-eslint-parser": "^9.4"
+    "eslint-plugin-jest": "^28.11",
+    "eslint-plugin-vue": "^10.0",
+    "globals": "^16.0",
+    "typescript-eslint": "^8.28",
+    "vue-eslint-parser": "^10.1"
   },
   "peerDependencies": {
-    "eslint": "^9.17"
+    "eslint": "^9.23"
   },
   "devDependencies": {
     "@apeframework/eslint": "0.0.0-dev.30",
     "@types/fs-extra": "^11.0",
-    "@types/node": "^22.10",
+    "@types/node": "^22.13",
     "cheerio": "^1.0",
-    "eslint": "^9.17",
-    "fs-extra": "^11.2",
+    "eslint": "^9.23",
+    "fs-extra": "^11.3",
     "npm-check-updates": "^17.1",
     "tsx": "^4.19",
-    "typescript": "^5.7"
+    "typescript": "^5.8"
   }
 }

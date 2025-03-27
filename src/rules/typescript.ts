@@ -139,6 +139,9 @@ const typescriptRules: Rules<'typescript/'> = {
   'typescript/no-misused-promises': [
     'error',
   ],
+  'typescript/no-misused-spread': [
+    'error',
+  ],
   'typescript/no-mixed-enums': [
     'error',
   ],

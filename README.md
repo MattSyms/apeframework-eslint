@@ -12,19 +12,33 @@ GitHub repository: [ApeFramework/apeframework-eslint](https://github.com/ApeFram
 yarn add @apeframework/eslint --dev
 ```
 
-## Usage
+## Usage (`eslint.config.js`)
 
-Create `eslint.config.js` file:
+Node configuration:
 
 ```js
-import base from '@apeframework/eslint/base'
-import jest from '@apeframework/eslint/jest'
+import node from '@apeframework/eslint/node'
+import typescript from '@apeframework/eslint/typescript'
+
+const config = [
+  node,
+  typescript,
+]
+
+export {
+  config as default,
+}
+```
+
+Browser configuration:
+
+```js
+import browser from '@apeframework/eslint/browser'
 import typescript from '@apeframework/eslint/typescript'
 import vue from '@apeframework/eslint/vue'
 
 const config = [
-  base,
-  jest,
+  browser,
   typescript,
   vue,
 ]

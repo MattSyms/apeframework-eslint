@@ -16,7 +16,6 @@ const typescriptDisabledRules: Rules<''> = {
   'no-magic-numbers': 'off',
   'no-redeclare': 'off',
   'no-restricted-imports': 'off',
-  'no-return-await': 'off',
   'no-shadow': 'off',
   'no-throw-literal': 'off',
   'no-unused-expressions': 'off',
