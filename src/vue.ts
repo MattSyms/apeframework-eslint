@@ -1,4 +1,5 @@
 import vuePlugin from 'eslint-plugin-vue'
+import globals from 'globals'
 import typescriptPlugin from 'typescript-eslint'
 import vueParser from 'vue-eslint-parser'
 import typescriptRules from './rules/typescript.js'
@@ -21,7 +22,7 @@ const vueConfig = {
       },
       extraFileExtensions: ['.vue'],
     },
-    globals: {},
+    globals: globals.browser,
   },
   rules: {
     ...typescriptDisabledRules,

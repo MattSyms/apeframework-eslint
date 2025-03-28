@@ -1,8 +1,8 @@
-import node from '@apeframework/eslint/node'
+import base from '@apeframework/eslint/base'
 import typescript from '@apeframework/eslint/typescript'
 
 const config = [
-  node,
+  base,
   {
     files: ['*.ts', '**/*.ts'],
     ...typescript,

@@ -14,34 +14,13 @@ yarn add @apeframework/eslint --dev
 
 ## Usage (`eslint.config.js`)
 
-Node configuration:
-
 ```js
-import node from '@apeframework/eslint/node'
-import typescript from '@apeframework/eslint/typescript'
-
-const config = [
-  node,
-  {
-    files: ['*.ts', '**/*.ts'],
-    ...typescript,
-  }
-]
-
-export {
-  config as default,
-}
-```
-
-Browser configuration:
-
-```js
-import browser from '@apeframework/eslint/browser'
+import base from '@apeframework/eslint/base'
 import typescript from '@apeframework/eslint/typescript'
 import vue from '@apeframework/eslint/vue'
 
 const config = [
-  browser,
+  base,
   {
     files: ['*.ts', '**/*.ts'],
     ...typescript,

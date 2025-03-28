@@ -1,3 +1,4 @@
+import globals from 'globals'
 import typescriptPlugin from 'typescript-eslint'
 import typescriptRules from './rules/typescript.js'
 import typescriptDisabledRules from './rules/typescriptDisabled.js'
@@ -14,7 +15,7 @@ const typescriptConfig = {
         impliedStrict: true,
       },
     },
-    globals: {},
+    globals: globals.browser,
   },
   rules: {
     ...typescriptDisabledRules,
