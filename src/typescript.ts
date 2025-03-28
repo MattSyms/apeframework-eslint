@@ -14,6 +14,7 @@ const typescriptConfig = {
         impliedStrict: true,
       },
     },
+    globals: {},
   },
   rules: {
     ...typescriptDisabledRules,

@@ -21,6 +21,7 @@ const vueConfig = {
       },
       extraFileExtensions: ['.vue'],
     },
+    globals: {},
   },
   rules: {
     ...typescriptDisabledRules,
