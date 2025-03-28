@@ -1,26 +1,29 @@
-import globals from 'globals'
 import typescriptPlugin from 'typescript-eslint'
+import { getGlobals } from './getGlobals.js'
 import typescriptRules from './rules/typescript.js'
 import typescriptDisabledRules from './rules/typescriptDisabled.js'
+import type { Globals } from './Globals.js'
 
-const typescriptConfig = {
-  plugins: {
-    'typescript': typescriptPlugin.plugin,
-  },
-  languageOptions: {
-    parser: typescriptPlugin.parser,
-    parserOptions: {
-      projectService: true,
-      ecmaFeatures: {
-        impliedStrict: true,
-      },
+const typescriptConfig = (globals: Globals | undefined): any => {
+  return {
+    plugins: {
+      'typescript': typescriptPlugin.plugin,
     },
-    globals: globals.browser,
-  },
-  rules: {
-    ...typescriptDisabledRules,
-    ...typescriptRules,
-  },
+    languageOptions: {
+      parser: typescriptPlugin.parser,
+      parserOptions: {
+        projectService: true,
+        ecmaFeatures: {
+          impliedStrict: true,
+        },
+      },
+      globals: getGlobals(globals),
+    },
+    rules: {
+      ...typescriptDisabledRules,
+      ...typescriptRules,
+    },
+  }
 }
 
 export {

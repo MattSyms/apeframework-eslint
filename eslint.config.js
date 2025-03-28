@@ -2,10 +2,10 @@ import base from '@apeframework/eslint/base'
 import typescript from '@apeframework/eslint/typescript'
 
 const config = [
-  base,
+  base(),
   {
     files: ['*.ts', '**/*.ts'],
-    ...typescript,
+    ...typescript(),
   },
   {
     ignores: [
