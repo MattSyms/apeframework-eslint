@@ -48,7 +48,7 @@ fs.writeJsonSync('build/package.json', {
   keywords: ['ape', 'framework', 'eslint'],
   repository: {
     type: 'git',
-    url: 'git+https://github.com/ApeFramework/apeframework-eslint.git',
+    url: 'git+https://github.com/MattSyms/apeframework-eslint.git',
   },
   type: pkg.type,
   engines: pkg.engines,
