@@ -11,6 +11,7 @@ const importRules: Rules<'import/'> = {
   'import/dynamic-import-chunkname': 'off',
   'import/enforce-node-protocol-usage': [
     'error',
+    'always',
   ],
   'import/export': [
     'error',
