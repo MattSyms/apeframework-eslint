@@ -4,7 +4,7 @@ const getTypescriptRules = async (): Promise<string[]> => {
   const rules: string[] = []
 
   const $ = await fromURL(
-    'https://typescript-eslint.io/rules',
+    'https://typescript-eslint.io/rules/',
   )
 
   $('div.theme-doc-markdown tr')

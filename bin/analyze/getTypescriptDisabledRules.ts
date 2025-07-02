@@ -5,7 +5,7 @@ const getTypescriptDisabledRules = async (): Promise<string[]> => {
   const urls: string[] = []
 
   const $ = await fromURL(
-    'https://typescript-eslint.io/rules',
+    'https://typescript-eslint.io/rules/',
   )
 
   $('div.theme-doc-markdown tr')
@@ -15,7 +15,7 @@ const getTypescriptDisabledRules = async (): Promise<string[]> => {
     })
     .find('a')
     .each((index, element) => {
-      urls.push(`https://typescript-eslint.io${$(element).attr('href')}`)
+      urls.push(`https://typescript-eslint.io${$(element).attr('href')}/`)
     })
 
   for (const url of urls) {

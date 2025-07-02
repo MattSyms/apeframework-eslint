@@ -4,7 +4,7 @@ const getVueRules = async (): Promise<string[]> => {
   const rules: string[] = []
 
   const $ = await fromURL(
-    'https://eslint.vuejs.org/rules',
+    'https://eslint.vuejs.org/rules/',
   )
 
   $('main.main table')
