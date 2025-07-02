@@ -9,6 +9,9 @@ const importRules: Rules<'import/'> = {
     'error',
   ],
   'import/dynamic-import-chunkname': 'off',
+  'import/enforce-node-protocol-usage': [
+    'error',
+  ],
   'import/export': [
     'error',
   ],

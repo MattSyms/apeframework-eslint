@@ -202,6 +202,9 @@ const typescriptRules: Rules<'typescript/'> = {
   'typescript/no-unnecessary-type-constraint': [
     'error',
   ],
+  'typescript/no-unnecessary-type-conversion': [
+    'error',
+  ],
   'typescript/no-unnecessary-type-parameters': [
     'error',
   ],
@@ -325,9 +328,6 @@ const typescriptRules: Rules<'typescript/'> = {
     'error',
   ],
   'typescript/triple-slash-reference': [
-    'error',
-  ],
-  'typescript/typedef': [
     'error',
   ],
   'typescript/unbound-method': [

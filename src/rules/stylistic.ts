@@ -71,10 +71,6 @@ const stylisticRules: Rules<'stylistic/'> = {
     'error',
     'always',
   ],
-  'stylistic/func-call-spacing': [
-    'error',
-    'never',
-  ],
   'stylistic/function-call-argument-newline': [
     'error',
     'consistent',

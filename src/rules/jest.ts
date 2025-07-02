@@ -98,6 +98,9 @@ const jestRules: Rules<'jest/'> = {
   'jest/prefer-each': [
     'error',
   ],
+  'jest/prefer-ending-with-an-expect': [
+    'error',
+  ],
   'jest/prefer-equality-matcher': [
     'error',
   ],

@@ -384,6 +384,9 @@ const baseRules: Rules<''> = {
   'no-throw-literal': [
     'error',
   ],
+  'no-unassigned-vars': [
+    'error',
+  ],
   'no-undef': [
     'error',
   ],

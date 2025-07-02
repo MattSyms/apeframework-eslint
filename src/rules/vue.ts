@@ -41,6 +41,9 @@ const vueRules = {
   'vue/define-props-declaration': [
     'error',
   ],
+  'vue/define-props-destructuring': [
+    'error',
+  ],
   'vue/enforce-style-attribute': [
     'error',
   ],
