@@ -26,7 +26,7 @@
     "eslint": "^9.30"
   },
   "devDependencies": {
-    "@apeframework/eslint": "0.0.0-dev.37",
+    "@apeframework/eslint": "^0.1",
     "@types/fs-extra": "^11.0",
     "@types/node": "^24.0",
     "cheerio": "^1.1",
