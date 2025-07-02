@@ -59,6 +59,12 @@ export {
 
 ## Development
 
+Install dependencies:
+
+```
+yarn
+```
+
 Update dependencies:
 
 ```
