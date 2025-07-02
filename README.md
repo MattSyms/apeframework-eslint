@@ -56,3 +56,49 @@ export {
   config as default,
 }
 ```
+
+## Development
+
+Update dependencies:
+
+```
+yarn update
+```
+
+Analyze rules:
+
+```
+yarn analyze
+```
+
+Compile:
+
+```
+yarn compile
+```
+
+Lint:
+
+```
+yarn lint
+```
+
+## Release:
+
+Tag stable release:
+
+```
+git tag v<major>.<minor>.<patch>
+```
+
+Tag dev release:
+
+```
+git tag v0.0.0-dev.<number>
+```
+
+Push tags:
+
+```
+git push --tags
+```
