@@ -4,10 +4,10 @@ const getImportRules = async (): Promise<string[]> => {
   const rules: string[] = []
 
   const $ = await fromURL(
-    'https://www.npmjs.com/package/eslint-plugin-import',
+    'https://github.com/import-js/eslint-plugin-import',
   )
 
-  $('div#readme tbody tr')
+  $('article.markdown-body tbody tr')
     .filter((index, element) => {
       return !$(element).text().includes('❌')
     })
