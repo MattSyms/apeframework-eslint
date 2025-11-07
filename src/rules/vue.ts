@@ -212,6 +212,9 @@ const vueRules = {
   'vue/no-duplicate-attributes': [
     'error',
   ],
+  'vue/no-duplicate-class-names': [
+    'error',
+  ],
   'vue/no-empty-component-block': [
     'error',
   ],
@@ -243,6 +246,9 @@ const vueRules = {
     'error',
   ],
   'vue/no-mutating-props': [
+    'error',
+  ],
+  'vue/no-negated-v-if-condition': [
     'error',
   ],
   'vue/no-parsing-error': [

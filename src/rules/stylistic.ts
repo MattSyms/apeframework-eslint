@@ -264,9 +264,6 @@ const stylisticRules: Rules<'stylistic/'> = {
   'stylistic/quotes': [
     'error',
     'single',
-    {
-      allowTemplateLiterals: false,
-    },
   ],
   'stylistic/rest-spread-spacing': [
     'error',

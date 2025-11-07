@@ -526,6 +526,7 @@ const baseRules: Rules<''> = {
   'prefer-template': [
     'error',
   ],
+  'preserve-caught-error': 'off',
   'radix': [
     'error',
   ],
