@@ -14,9 +14,7 @@ const baseRules: Rules<''> = {
   'block-scoped-var': [
     'error',
   ],
-  'camelcase': [
-    'error',
-  ],
+  'camelcase': 'off',
   'capitalized-comments': 'off',
   'class-methods-use-this': 'off',
   'complexity': [
