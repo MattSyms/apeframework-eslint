@@ -1,8 +1,9 @@
 import jestPlugin from 'eslint-plugin-jest'
 import globals from 'globals'
 import jestRules from './rules/jest.js'
+import type { Config } from './Config.js'
 
-const jestConfig = {
+const jestConfig: Config = {
   plugins: {
     'jest': jestPlugin,
   },

@@ -5,8 +5,9 @@ import vueParser from 'vue-eslint-parser'
 import typescriptRules from './rules/typescript.js'
 import typescriptDisabledRules from './rules/typescriptDisabled.js'
 import vueRules from './rules/vue.js'
+import type { Config } from './Config.js'
 
-const vueConfig = {
+const vueConfig: Config = {
   plugins: {
     'typescript': typescriptPlugin.plugin,
     'vue': vuePlugin,
