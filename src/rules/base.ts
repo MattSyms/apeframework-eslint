@@ -17,9 +17,7 @@ const baseRules: Rules<''> = {
   'camelcase': 'off',
   'capitalized-comments': 'off',
   'class-methods-use-this': 'off',
-  'complexity': [
-    'error',
-  ],
+  'complexity': 'off',
   'consistent-return': [
     'error',
   ],
