@@ -330,9 +330,7 @@ const typescriptRules: Rules<'typescript/'> = {
     'error',
   ],
   'typescript/strict-boolean-expressions': 'off',
-  'typescript/strict-void-return': [
-    'error',
-  ],
+  'typescript/strict-void-return': 'off',
   'typescript/switch-exhaustiveness-check': [
     'error',
   ],
