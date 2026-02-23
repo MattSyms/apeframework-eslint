@@ -151,18 +151,6 @@ const stylisticRules: Rules<'stylistic/'> = {
     'error',
     'always',
   ],
-  'stylistic/list-style': [
-    'error',
-    {
-      singleLine: {
-        spacing: 'always',
-        maxItems: Number.POSITIVE_INFINITY,
-      },
-      multiLine: {
-        minItems: 0,
-      },
-    },
-  ],
   'stylistic/max-len': [
     'error',
     {
