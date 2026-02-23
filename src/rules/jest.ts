@@ -39,6 +39,9 @@ const jestRules: Rules<'jest/'> = {
   'jest/no-duplicate-hooks': [
     'error',
   ],
+  'jest/no-error-equal': [
+    'error',
+  ],
   'jest/no-export': [
     'error',
   ],
@@ -76,6 +79,12 @@ const jestRules: Rules<'jest/'> = {
     'error',
   ],
   'jest/no-test-return-statement': [
+    'error',
+  ],
+  'jest/no-unnecessary-assertion': [
+    'error',
+  ],
+  'jest/no-unneeded-async-expect-function': [
     'error',
   ],
   'jest/no-untyped-mock-factory': [
@@ -124,6 +133,9 @@ const jestRules: Rules<'jest/'> = {
   'jest/prefer-mock-promise-shorthand': [
     'error',
   ],
+  'jest/prefer-mock-return-shorthand': [
+    'error',
+  ],
   'jest/prefer-snapshot-hint': [
     'error',
   ],
@@ -137,6 +149,12 @@ const jestRules: Rules<'jest/'> = {
     'error',
   ],
   'jest/prefer-to-contain': [
+    'error',
+  ],
+  'jest/prefer-to-have-been-called': [
+    'error',
+  ],
+  'jest/prefer-to-have-been-called-times': [
     'error',
   ],
   'jest/prefer-to-have-length': [
@@ -162,6 +180,12 @@ const jestRules: Rules<'jest/'> = {
     'error',
   ],
   'jest/valid-expect-in-promise': [
+    'error',
+  ],
+  'jest/valid-expect-with-promise': [
+    'error',
+  ],
+  'jest/valid-mock-module-path': [
     'error',
   ],
   'jest/valid-title': [

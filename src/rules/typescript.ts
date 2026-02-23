@@ -229,6 +229,9 @@ const typescriptRules: Rules<'typescript/'> = {
   'typescript/no-unused-expressions': [
     'error',
   ],
+  'typescript/no-unused-private-class-members': [
+    'error',
+  ],
   'typescript/no-unused-vars': [
     'error',
     {
@@ -239,6 +242,9 @@ const typescriptRules: Rules<'typescript/'> = {
     'error',
   ],
   'typescript/no-useless-constructor': [
+    'error',
+  ],
+  'typescript/no-useless-default-assignment': [
     'error',
   ],
   'typescript/no-useless-empty-export': [
@@ -324,6 +330,9 @@ const typescriptRules: Rules<'typescript/'> = {
     'error',
   ],
   'typescript/strict-boolean-expressions': 'off',
+  'typescript/strict-void-return': [
+    'error',
+  ],
   'typescript/switch-exhaustiveness-check': [
     'error',
   ],

@@ -118,6 +118,7 @@ const stylisticRules: Rules<'stylistic/'> = {
   'stylistic/jsx-one-expression-per-line': 'off',
   'stylistic/jsx-pascal-case': 'off',
   'stylistic/jsx-props-no-multi-spaces': 'off',
+  'stylistic/jsx-props-style': 'off',
   'stylistic/jsx-quotes': 'off',
   'stylistic/jsx-self-closing-comp': 'off',
   'stylistic/jsx-sort-props': 'off',
@@ -149,6 +150,18 @@ const stylisticRules: Rules<'stylistic/'> = {
   'stylistic/lines-between-class-members': [
     'error',
     'always',
+  ],
+  'stylistic/list-style': [
+    'error',
+    {
+      singleLine: {
+        spacing: 'always',
+        maxItems: Number.POSITIVE_INFINITY,
+      },
+      multiLine: {
+        minItems: 0,
+      },
+    },
   ],
   'stylistic/max-len': [
     'error',

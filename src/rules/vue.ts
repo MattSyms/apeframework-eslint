@@ -230,6 +230,9 @@ const vueRules = {
   'vue/no-lifecycle-after-await': [
     'error',
   ],
+  'vue/no-literals-in-template': [
+    'error',
+  ],
   'vue/no-lone-template': [
     'error',
   ],
@@ -342,6 +345,9 @@ const vueRules = {
     'error',
   ],
   'vue/no-undef-components': [
+    'error',
+  ],
+  'vue/no-undef-directives': [
     'error',
   ],
   'vue/no-undef-properties': [
