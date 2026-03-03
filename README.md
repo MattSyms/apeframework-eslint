@@ -22,12 +22,18 @@ import typescript from '@apeframework/eslint/typescript'
 
 const config = [
   {
+    ignores: [],
+  },
+  {
     files: ['*.js', '**/*.js'],
     ...javascript(),
   },
   {
     files: ['*.ts', '**/*.ts'],
     ...typescript(),
+  },
+  {
+    rules: {},
   },
 ]
 
@@ -45,6 +51,9 @@ import vue from '@apeframework/eslint/vue'
 
 const config = [
   {
+    ignores: [],
+  },
+  {
     files: ['*.js', '**/*.js'],
     ...javascript(),
   },
@@ -55,6 +64,9 @@ const config = [
   {
     files: ['*.vue', '**/*.vue'],
     ...vue(),
+  },
+  {
+    rules: {},
   },
 ]
 
