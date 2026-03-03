@@ -7,7 +7,7 @@ import stylisticRules from './rules/stylistic.js'
 import type { Config } from './Config.js'
 import type { Globals } from './Globals.js'
 
-const baseConfig = (globals: Globals | undefined): Config => {
+const javascriptConfig = (globals: Globals | undefined): Config => {
   return {
     plugins: {
       'import': importPlugin,
@@ -27,5 +27,5 @@ const baseConfig = (globals: Globals | undefined): Config => {
 }
 
 export {
-  baseConfig as default,
+  javascriptConfig as default,
 }

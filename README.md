@@ -17,11 +17,14 @@ yarn add @apeframework/eslint --dev
 Node configuration:
 
 ```js
-import base from '@apeframework/eslint/base'
+import javascript from '@apeframework/eslint/javascript'
 import typescript from '@apeframework/eslint/typescript'
 
 const config = [
-  base(),
+  {
+    files: ['*.js', '**/*.js'],
+    ...javascript(),
+  },
   {
     files: ['*.ts', '**/*.ts'],
     ...typescript(),
@@ -36,19 +39,22 @@ export {
 Browser configuration:
 
 ```js
-import base from '@apeframework/eslint/base'
+import javascript from '@apeframework/eslint/javascript'
 import typescript from '@apeframework/eslint/typescript'
 import vue from '@apeframework/eslint/vue'
 
 const config = [
-  base('browser'),
+  {
+    files: ['*.js', '**/*.js'],
+    ...javascript(),
+  },
   {
     files: ['*.ts', '**/*.ts'],
     ...typescript('browser'),
   },
   {
     files: ['*.vue', '**/*.vue'],
-    ...vue,
+    ...vue(),
   },
 ]
 

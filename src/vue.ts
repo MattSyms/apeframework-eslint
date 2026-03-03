@@ -1,35 +1,49 @@
+import stylisticPlugin from '@stylistic/eslint-plugin'
+import importPlugin from 'eslint-plugin-import'
 import vuePlugin from 'eslint-plugin-vue'
-import globals from 'globals'
 import typescriptPlugin from 'typescript-eslint'
 import vueParser from 'vue-eslint-parser'
+import baseRules from './rules/base.js'
+import importRules from './rules/import.js'
+import stylisticRules from './rules/stylistic.js'
 import typescriptRules from './rules/typescript.js'
 import typescriptDisabledRules from './rules/typescriptDisabled.js'
 import vueRules from './rules/vue.js'
 import type { Config } from './Config.js'
+import { getGlobals } from './getGlobals.js'
 
-const vueConfig: Config = {
-  plugins: {
-    'typescript': typescriptPlugin.plugin,
-    'vue': vuePlugin,
-  },
-  processor: 'vue/vue',
-  languageOptions: {
-    parser: vueParser,
-    parserOptions: {
-      parser: typescriptPlugin.parser,
-      projectService: true,
-      ecmaFeatures: {
-        impliedStrict: true,
-      },
-      extraFileExtensions: ['.vue'],
+const vueConfig = (): Config => {
+  return {
+    plugins: {
+      'import': importPlugin,
+      'stylistic': stylisticPlugin,
+      'typescript': typescriptPlugin.plugin,
+      'vue': vuePlugin,
     },
-    globals: globals.browser,
-  },
-  rules: {
-    ...typescriptDisabledRules,
-    ...typescriptRules,
-    ...vueRules,
-  },
+    processor: 'vue/vue',
+    languageOptions: {
+      sourceType: 'module',
+      ecmaVersion: 'latest',
+      globals: getGlobals('browser'),
+      parser: vueParser,
+      parserOptions: {
+        parser: typescriptPlugin.parser,
+        projectService: true,
+        ecmaFeatures: {
+          impliedStrict: true,
+        },
+        extraFileExtensions: ['.vue'],
+      },
+    },
+    rules: {
+      ...baseRules,
+      ...importRules,
+      ...stylisticRules,
+      ...typescriptDisabledRules,
+      ...typescriptRules,
+      ...vueRules,
+    },
+  }
 }
 
 export {

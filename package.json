@@ -18,7 +18,7 @@
     "eslint-plugin-import": "^2.32",
     "eslint-plugin-jest": "^29.15",
     "eslint-plugin-vue": "^10.8",
-    "globals": "^17.3",
+    "globals": "^17.4",
     "typescript-eslint": "^8.56",
     "vue-eslint-parser": "^10.4"
   },
@@ -32,7 +32,7 @@
     "cheerio": "^1.2",
     "eslint": "^10.0",
     "fs-extra": "^11.3",
-    "npm-check-updates": "^19.4",
+    "npm-check-updates": "^19.6",
     "tsx": "^4.21",
     "typescript": "^5.9"
   }
