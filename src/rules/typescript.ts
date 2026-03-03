@@ -97,9 +97,7 @@ const typescriptRules: Rules<'typescript/'> = {
     'error',
   ],
   'typescript/no-empty-function': 'off',
-  'typescript/no-empty-object-type': [
-    'error',
-  ],
+  'typescript/no-empty-object-type': 'off',
   'typescript/no-explicit-any': 'off',
   'typescript/no-extra-non-null-assertion': [
     'error',
@@ -205,9 +203,7 @@ const typescriptRules: Rules<'typescript/'> = {
   'typescript/no-unnecessary-type-conversion': [
     'error',
   ],
-  'typescript/no-unnecessary-type-parameters': [
-    'error',
-  ],
+  'typescript/no-unnecessary-type-parameters': 'off',
   'typescript/no-unsafe-argument': 'off',
   'typescript/no-unsafe-assignment': 'off',
   'typescript/no-unsafe-call': 'off',
@@ -331,9 +327,7 @@ const typescriptRules: Rules<'typescript/'> = {
   ],
   'typescript/strict-boolean-expressions': 'off',
   'typescript/strict-void-return': 'off',
-  'typescript/switch-exhaustiveness-check': [
-    'error',
-  ],
+  'typescript/switch-exhaustiveness-check': 'off',
   'typescript/triple-slash-reference': [
     'error',
   ],

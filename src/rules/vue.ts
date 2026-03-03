@@ -7,6 +7,11 @@ const vueRules = {
   ],
   'vue/block-lang': [
     'error',
+    {
+      script: {
+        lang: 'ts',
+      },
+    },
   ],
   'vue/block-order': [
     'error',
@@ -122,9 +127,7 @@ const vueRules = {
   'vue/no-async-in-computed-properties': [
     'error',
   ],
-  'vue/no-bare-strings-in-template': [
-    'error',
-  ],
+  'vue/no-bare-strings-in-template': 'off',
   'vue/no-boolean-default': [
     'error',
   ],
@@ -344,9 +347,7 @@ const vueRules = {
   'vue/no-this-in-before-route-enter': [
     'error',
   ],
-  'vue/no-undef-components': [
-    'error',
-  ],
+  'vue/no-undef-components': 'off',
   'vue/no-undef-directives': [
     'error',
   ],
@@ -476,9 +477,7 @@ const vueRules = {
   'vue/require-name-property': [
     'error',
   ],
-  'vue/require-prop-comment': [
-    'error',
-  ],
+  'vue/require-prop-comment': 'off',
   'vue/require-prop-type-constructor': [
     'error',
   ],
@@ -506,9 +505,7 @@ const vueRules = {
   'vue/require-valid-default-prop': [
     'error',
   ],
-  'vue/restricted-component-names': [
-    'error',
-  ],
+  'vue/restricted-component-names': 'off',
   'vue/return-in-computed-property': [
     'error',
   ],
@@ -524,9 +521,7 @@ const vueRules = {
   'vue/slot-name-casing': [
     'error',
   ],
-  'vue/sort-keys': [
-    'error',
-  ],
+  'vue/sort-keys': 'off',
   'vue/static-class-names-order': [
     'error',
   ],

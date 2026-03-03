@@ -469,9 +469,7 @@ const baseRules: Rules<''> = {
   'no-void': [
     'error',
   ],
-  'no-warning-comments': [
-    'error',
-  ],
+  'no-warning-comments': 'off',
   'no-with': [
     'error',
   ],
