@@ -114,3 +114,7 @@ Push tags:
 ```
 git push --tags
 ```
+
+## TODO
+
+- ESLint v10

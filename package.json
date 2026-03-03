@@ -23,14 +23,14 @@
     "vue-eslint-parser": "^10.4"
   },
   "peerDependencies": {
-    "eslint": "^10.0"
+    "eslint": "^9.39"
   },
   "devDependencies": {
-    "@apeframework/eslint": "^0.4",
+    "@apeframework/eslint": "v0.0.0-dev.46",
     "@types/fs-extra": "^11.0",
     "@types/node": "^25.3",
     "cheerio": "^1.2",
-    "eslint": "^10.0",
+    "eslint": "^9.39",
     "fs-extra": "^11.3",
     "npm-check-updates": "^19.6",
     "tsx": "^4.21",

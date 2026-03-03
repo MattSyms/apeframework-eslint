@@ -7,8 +7,8 @@ import importRules from './rules/import.js'
 import stylisticRules from './rules/stylistic.js'
 import typescriptRules from './rules/typescript.js'
 import typescriptDisabledRules from './rules/typescriptDisabled.js'
-import type { Globals } from './Globals.js'
 import type { Config } from './Config.js'
+import type { Globals } from './Globals.js'
 
 const typescriptConfig = (globals: Globals | undefined): Config => {
   return {
